@@ -22,10 +22,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  icons: {
-    icon: "/tobepro-favicon.png",
-    apple: "/tobepro-favicon.png",
-  },
 };
 
 export default function RootLayout({
