@@ -19,7 +19,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center">
-            <Image src="/tobepro-logo.png" alt="tobePro" width={130} height={36} className="h-8 w-auto" priority />
+            <Image src="/tobepro-logo.webp" alt="tobePro" width={130} height={36} className="h-8 w-auto" priority />
           </a>
 
           <nav className="hidden md:flex items-center gap-7">

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const WA = "https://wa.me/5532991977784?text=Olá!%20Quero%20meu%20site%20no%20ar%20em%2024%20horas!";
 
-const words = ["24 horas.", "1 dia.", "amanhã."];
+const words = ["24 horas", "tempo recorde", "1 dia útil"];
 
 export default function Hero() {
   const [wordIdx, setWordIdx] = useState(0);
@@ -36,13 +36,19 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl xl:text-7xl font-black leading-[1.05] mb-6 animate-fade-in-up" style={{animationDelay:"0.1s"}}>
-            Seu negócio<br />
-            <span className="grad-text">online em</span>{" "}
-            <span
-              className="inline-block text-white transition-all duration-400"
-              style={{ opacity: visible ? 1 : 0, transform: visible ? "translateY(0)" : "translateY(10px)" }}
-            >
-              {words[wordIdx]}
+            Seu site no ar<br />
+            <span className="grad-text">em{" "}
+              <span
+                className="inline-block"
+                style={{
+                  opacity: visible ? 1 : 0,
+                  transform: visible ? "translateY(0)" : "translateY(12px)",
+                  transition: "opacity 0.35s ease, transform 0.35s ease",
+                  display: "inline-block",
+                }}
+              >
+                {words[wordIdx]}
+              </span>
             </span>
           </h1>
 

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-10">
           <div className="md:col-span-2">
-            <Image src="/tobepro-logo.png" alt="tobePro" width={120} height={34} className="h-8 w-auto mb-4" />
+            <Image src="/tobepro-logo.webp" alt="tobePro" width={120} height={34} className="h-8 w-auto mb-4" />
             <p className="text-[#6b7280] text-sm leading-relaxed max-w-sm mb-5">
               Sites, sistemas e bots de atendimento para pequenas e médias empresas.
               Do zero ao online com preços acessíveis.
