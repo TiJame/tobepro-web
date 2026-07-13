@@ -6,7 +6,6 @@ import Bots from "./components/Bots";
 import Products from "./components/Products";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
-import WhatsAppFloat from "./components/WhatsAppFloat";
 import ScrollInit from "./components/ScrollInit";
 
 export default function Home() {
@@ -21,7 +20,6 @@ export default function Home() {
       <Products />
       <CTA />
       <Footer />
-      <WhatsAppFloat />
     </main>
   );
 }
