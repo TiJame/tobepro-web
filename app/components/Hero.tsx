@@ -1,22 +1,8 @@
-"use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 const WA = "https://wa.me/5532991977784?text=Olá!%20Quero%20meu%20site%20no%20ar%20em%2024%20horas!";
 
-const words = ["24 horas", "tempo recorde", "1 dia útil"];
-
 export default function Hero() {
-  const [wordIdx, setWordIdx] = useState(0);
-  const [visible, setVisible] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setVisible(false);
-      setTimeout(() => { setWordIdx(i => (i + 1) % words.length); setVisible(true); }, 400);
-    }, 2500);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -37,19 +23,7 @@ export default function Hero() {
 
           <h1 className="text-5xl sm:text-6xl xl:text-7xl font-black leading-[1.05] mb-6 animate-fade-in-up" style={{animationDelay:"0.1s"}}>
             Seu site no ar<br />
-            <span className="grad-text">em{" "}
-              <span
-                className="inline-block"
-                style={{
-                  opacity: visible ? 1 : 0,
-                  transform: visible ? "translateY(0)" : "translateY(12px)",
-                  transition: "opacity 0.35s ease, transform 0.35s ease",
-                  display: "inline-block",
-                }}
-              >
-                {words[wordIdx]}
-              </span>
-            </span>
+            <span className="grad-text">em 24h</span>
           </h1>
 
           <p className="text-lg text-[#6b7280] mb-8 max-w-lg leading-relaxed animate-fade-in-up" style={{animationDelay:"0.2s"}}>
