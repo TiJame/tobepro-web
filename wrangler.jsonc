@@ -1,0 +1,10 @@
+// Cloudflare Workers com arquivos estáticos (2026-11-06, saída da Vercel): o build gera os arquivos e o
+// "npx wrangler deploy" publica a pasta abaixo. Sem código de servidor. Página inexistente → 404.html.
+{
+  "name": "tobepro-web",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
